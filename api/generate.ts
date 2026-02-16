@@ -24,8 +24,14 @@ export default async function handler(req: any, res: any) {
     );
 
     const data = await response.json();
-    res.status(200).json(data);
-  } catch (error) {
-    res.status(500).json({ error: "Server error" });
+
+    console.log("Gemini response:", data);
+
+    return res.status(200).json(data);
+  } catch (error: any) {
+    return res.status(500).json({
+      error: "Server error",
+      details: error.message,
+    });
   }
 }

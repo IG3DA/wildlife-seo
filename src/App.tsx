@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div style={{ padding: "40px" }}>
-      <h1>Wildlife SEO Strategist Pro 🐆</h1>
+     <h1>Wildlife SEO Strategist Pro 🐆 UPDATED</h1>
       <button onClick={generate} style={{ marginTop: "20px" }}>
         Generate
       </button>
